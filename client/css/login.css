@@ -1,0 +1,221 @@
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input {
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.logo-warp,.content-warp,.footer-warp{
+    
+    margin: 0 auto;
+}
+#logo{
+    width: 100%;
+    /* background-color:black; */
+}
+.logo-warp{
+    width: 1000px;
+    height: 80px;
+    /* background-color: pink; */
+}
+.logo-warp .logo-l{
+    float: left;
+    height: 70px;
+    width: 300px;
+    /* background-color: orange; */
+    padding: 10px 0 0;
+}
+.logo-warp .logo-l img{
+    width: 240px;
+    height: 68px;
+}
+.logo-warp .logo-r{
+    float: right;
+    height: 40px;
+    width: 220px;
+    /* background-color:#ccc; */
+    padding: 40px 0 0 60px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ccc;
+}
+.logo-warp .logo-r a{
+    font-size: 18px;
+    font-weight: bold;
+}
+#content{
+    width: 100%;
+    height: 550px;
+    background: url(../img/880.jpg) no-repeat;
+    background-size: 100%;
+    padding: 50px 0 0;
+    border-top: 5px solid #ccc;
+    
+}
+.content-warp{
+    width: 400px;
+    height: 480px; 
+    background: #4283b4;  
+    border: 20px solid #ccc;
+    margin-left: 900px;
+}
+#footer{
+    width: 100%;
+    background-color:black;
+}
+.footer-warp{
+    width: 1000px;
+    height: 200px;
+    /* background-color: orange; */
+}
+.footer-warp p{
+    /* background-color: pink; */
+    padding: 20px 0 0;
+    text-align: center;
+    
+}
+.footer-warp p a{
+    margin: 0 5px;
+    color: #ffffff;
+    font-size: 12px;
+}
+.footer-warp p span{
+    margin: 5px;
+    color: #ffffff;
+    font-size: 12px ;
+}
+.footer-warp .pass{
+    padding: 15px 0 0;
+}
+.content-reg{
+    width: 100%;
+    height: 40px;
+    border-bottom: 3px solid #ccc;
+}
+.content-reg1{
+    width: 50%;
+    height: 40px;
+    float: left;
+    /* background-color: #ccc;  */
+    text-align: center;
+    line-height: 40px;
+    
+    color: #ffffff;
+}
+.content-reg2{
+    width: 50%;
+    height: 40px;
+    float: right;
+    /* background-color: #ccc;  */
+    text-align: center;
+    line-height: 40px;
+    /* border-bottom: 3px solid #ccc; */
+    color: #ffffff;
+}
+
+.content-cent{
+    width: 300px;
+    min-height: 150px;
+    margin: 20px auto;
+    /* background-color: #ccc; */
+}
+.act{
+    display: none;
+}
+.content-cent input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid red;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.miMa{
+    /* background-color: orange; */
+    text-align: right;
+    font-size: 12px;
+    padding-top: 5px;
+}
+.login-content{
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    /* background-color: #ccc; */
+}
+.login-content #btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(144, 155, 120);
+    margin-bottom: 10px;
+}  
+.login-content .yuedu{
+    font-size: 14px;
+    margin-left: 5px;
+} 
+.login-content .zhangHao{
+    text-align: center;
+    font-size: 12px;
+    padding-top: 20px;
+}
+.login-content .zhangHao2{
+    text-align: center;
+    font-size: 12px;
+    padding-top: 55px;
+}
+#userphone{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid red; */
+}
+.userP{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    /* margin: 0; */
+}
+.userP #userP-l{
+    /* display: block; */
+    width: 60%;
+    height: 80%;
+    float: left;
+}
+.userP #userP-l #userpd{
+    margin: 0;
+}
+.userP #can{
+    width: 40%;
+    height: 100%;
+    background-color: #ccc;
+    /* border-radius: 10px; */
+    float: right;
+}
+
+#imgCodec{
+    width: 120px;
+    height: 20px;
+    display: inline-block;
+    /* line-height: 50px; */
+    padding-top: 30px;
+    
+}
+canvas{
+    width: 100%;
+    height: 20px;
+    margin-left:20px;
+}
+button{
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+}
+#portocol{
+    width: 10px;
+    height: 10px;
+    /* font-size: 14px; */
+}
+td #check{
+    font-size: 14px;
+    font-weight: normal;
+}
