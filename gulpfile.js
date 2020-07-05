@@ -42,9 +42,9 @@ gulp.task("jiantin",()=>{
         return gulp.src("./client/*.html").pipe(gulp.dest("./build"))
     })
     gulp.watch("./client/css/*",()=>{
-        return gulp.src("./client/css/index.css").pipe(gulp.dest("./build/css"))
+        return gulp.src("./client/css/*.css").pipe(gulp.dest("./build/css"))
     })
     gulp.watch("client/js/*",()=>{
-        return gulp.src("./client/js/index.js").pipe(gulp.dest("./build/js"))
+        return gulp.src("./client/js/*.js").pipe(gulp.dest("./build/js"))
     })
 })

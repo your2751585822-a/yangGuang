@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/list.css">
+</head>
+<body>
+    <div id="logo">
+        <div id="logo-warp">
+            <div class="logo-l">
+                <a href="">
+                    <img src="./img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="logo-c">
+                <div class="c-box">
+                    <i class="btn1 iconfont icon-search1"></i>
+                    <input type="text" class="btn2" placeholder="请输入你想要的商品">
+                    <button class="btn3">搜索</button>
+                </div>
+                <div id="key">
+                    关键字：
+                    <ul class="keyword">
+                        <li><a href="" class="nav-a">花生</a></li>
+                        <li><a href="" class="nav-a">白酒</a></li>
+                        <li><a href="" class="nav-a">养生茶</a></li>
+                        <li><a href="" class="nav-a">迪丽热巴</a></li>
+                        <li><a href="" class="nav-a">舒畅</a></li>
+                        <li><a href="" class="nav-a">大米</a></li>
+                        <li><a href="" class="nav-a">小馒头</a></li>
+                        <li><a href="" class="nav-a">花生</a></li>
+                        
+                    </ul>
+                
+            </div>
+        </div>
+            <div class="logo-r">
+                <div r-Box>
+                    <div class="r-box">
+                        <i>我的购物车</i>    <i class="iconfont icon-gouwuche4"></i>
+                    </div>
+                    <div class="r-box2">
+                        <a href="./index.html">返回首頁</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="header-warp">
+        <ul class="nav-box">
+            <ul class="a-width">
+                <li class="moren" data-res="dt">默認排序</li>
+                <li data-res="de">價格從高到低</li>
+                <li data-res="ae">價格從低到高</li>
+            </ul>
+           
+        </ul>
+        
+    <div id="list-warp">
+        <ul class="list-box">
+          
+        </ul>
+    </div>
+    <div id="cent-warp">
+        猜 你 喜 欢
+    </div>
+    <div id="store-warp">
+        <ul class="store-box">
+            
+        </ul>
+    </div>
+    <div id="footer">
+        <div class="footer-warp">
+            <p class="pass">
+                <a href="">首页</a>
+                <a href="">招商合作</a>
+                <a href="">关于央广购物</a>
+                <a href="">联系我们</a>
+                <a href="">成为供应商</a>
+            </p>
+            <p class="pass">
+                <i>京公网安备：11011502003547  京ICP备19000295号</i>
+                <i>食品流通许可证编号：SP1101151210063489</i>
+                <i>信息网络传播视听节目许可证：0102002号  营业执照</i>
+            </p>
+            <p class="pass"><a href="">央广小品科技(北京)有限公司</a></p>
+            <p class="pass">
+                <i>Copyright©2010-2019</i>
+                <i>cnrmall.com All Rights Reserved</i>
+                <i>服务热线：4008-518-518</i>
+            </p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+<script src="./js/jquery-3.4.1.js"></script>
+<script src="js/list.js"></script>
+<script>
+    // class Slider{
+    //     constructor(data){
+    //         this.data = data
+    //         this.oBox = null
+    //         this.oImgBox = null
+    //         this.oBoxControl = null
+    //         this.oBoxNav = 
+            
+    //         this.oImgs = this.data.length
+    //         this.index = 0
+    //         this.cdu = 1500
+    //         this.imgNav = document.getElementsByClassName("navs")
+    //         this.oSpan = document.getElementsByTagName("span")
+    //         this.timer  = 0
+    //     }
+    //     addEvent(){
+    //         this.createoBox()
+    //         this.addEventSlider()
+    //         this.addEventSliderMouse()
+    //     }
+    //     addEventSlider(){
+    //     this.timer = setInterval(() => {
+    //         this.addEventGo(this.index+1)
+                
+                
+    //         }, 2000);
+    //     }
+    //     addEventGo(transOrd){
+            
+    //         let outOrd = this.index
+    //         this.index = transOrd
+    //             if(this.index>this.oImgs-1){
+    //                 this.index = 0
+    //             }
+    //             if(this.index<0){
+    //                 this.index = this.oImgs-1
+    //             }
+    //             this.oImgBox.children[outOrd].style.left = -(this.cdu)+"px"
+    //             this.oImgBox.children[this.index].style.left = 1500+"px"
+    //             this.oImgBox.children[this.index].style.left = 0+"px"
+                
+    //             this.imgNav[outOrd].style.backgroundColor = "red"
+    //             this.imgNav[this.index].style.backgroundColor = "#ccc"
+    //     }
+    //     addEventSliderMouse(){
+    //         // clearInterval(this.timer)
+    //         this.oSpan[0].onclick = ()=>{
+    //             // let outOrd = this.index--
+    //             // if(this.index>this.oImgs-1){
+    //             //     this.index = 0
+    //             // }
+    //             // if(this.index<0){
+    //             //     this.index = this.oImgs-1
+    //             // }
+    //             // this.oImgBox.children[outOrd].style.left = -(this.cdu)+"px"
+    //             // this.oImgBox.children[this.index].style.left = 500+"px"
+    //             // this.oImgBox.children[this.index].style.left = 0+"px"
+                
+    //             // this.imgNav[outOrd].style.backgroundColor = "red"
+    //             // this.imgNav[this.index].style.backgroundColor = "#ccc"
+    //             clearInterval(this.timer)
+    //             this.addEventGo(this.index-1)
+    //         }
+    //         this.oSpan[1].onclick = ()=>{
+    //             // let outOrd = this.index++
+    //             // if(this.index>this.oImgs-1){
+    //             //     this.index = 0
+    //             // }
+    //             // if(this.index<0){
+    //             //     this.index = this.oImgs-1
+    //             // }
+    //             // this.oImgBox.children[outOrd].style.left = -(this.cdu)+"px"
+    //             // this.oImgBox.children[this.index].style.left = 500+"px"
+    //             // this.oImgBox.children[this.index].style.left = 0+"px"
+                
+    //             // this.imgNav[outOrd].style.backgroundColor = "red"
+    //             // this.imgNav[this.index].style.backgroundColor = "#ccc"
+    //             // clearInterval(this.timer)
+    //             clearInterval(this.timer)
+    //             this.addEventGo(this.index+1)
+    //         }
+    //         this.oImgBox.onmouseover=()=>{
+    //             clearInterval(this.timer)
+    //         }
+    //         this.oImgBox.onmouseout =()=>{
+    //             this.addEventSlider()
+    //         }
+    //         // 
+    //         // this.imgNav.map(item=>item.onclick=function(){
+    //         //     // that.addEventGo(this.index())
+    //         //     console.log(this)
+    //         // })
+    //         for(let i=0;i<this.imgNav.length;i++){
+    //             this.imgNav[i].onclick = ()=>{
+    //                 clearInterval(this.timer)
+    //                 this.addEventGo(i)
+    //             }
+    //         }            
+    //     }
+    //     createoBox(){let that = this
+    //         this.createoImgBox()
+    //         this.createoBoxControl()
+    //         this.createoBoxNav()
+            
+    //         this.oBox = document.createElement("div")
+    //         this.oBox.className = "oDiv"
+            
+    //         this.oBox.appendChild(this.oImgBox)
+    //         this.oBox.appendChild(this.oBoxControl)
+    //         this.oBox.appendChild(this.oBoxNav)
+    //         document.getElementById("cold-warp").appendChild(this.oBox)
+    //     }
+    //     createoImgBox(){
+    //         this.oImgBox = document.createElement("ul")
+    //         this.oImgBox.className = "img-box"
+    //         this.oImgBox.innerHTML = this.data.map(item=>`<li class="imgs"><img src="${item}" alt=""></li>`).join("")
+    //     }
+    //     createoBoxControl(){
+    //         this.oBoxControl = document.createElement("div")
+    //         this.oBoxControl.className = "oBoxSpan"
+    //         this.oBoxControl.innerHTML = ` <span class="prev d1">&lt</span><span class="next d1">&gt</span>`
+            
+    //     }
+    //     createoBoxNav(){
+    //         this.oBoxNav = document.createElement("ol")
+    //         this.oBoxNav.className = "imgNav"
+    //         this.oBoxNav.innerHTML = this.data.map((item,index)=>`<li class = "navs">${index+1}</li>`).join("")
+    //     }
+        
+    // }
+    // let p1 = new Slider(["./img/轮播2.png","./img/轮播1.png"])
+    // p1.addEvent()
+    
+</script>

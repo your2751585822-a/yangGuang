@@ -11,7 +11,6 @@
 }
 #logo-warp {
   height: 109px;
-  background-color: #ccc;
 }
 #logo-warp .logo-l {
   width: 300px;
@@ -38,6 +37,11 @@
   width: 100%;
   height: 40px;
   border: 2px solid red;
+}
+#logo-warp .logo-c .c-box .iconfont {
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
 }
 #logo-warp .logo-c .c-box .btn1 {
   width: 40px;
@@ -103,8 +107,6 @@
 }
 #header-warp {
   height: 42px;
-  background-color: #ccc;
-  border-top: 1px solid red;
   position: relative;
 }
 #header-warp .nav-box {
@@ -114,6 +116,9 @@
 }
 #header-warp .nav-box li {
   float: left;
+}
+#header-warp .nav-box li .a-width {
+  padding-right: 30px;
 }
 #header-warp .nav-box li a {
   display: inline-block;
@@ -329,6 +334,7 @@ span:nth-of-type(2) {
   color: #ffffff;
   text-align: center;
   padding-top: 20px;
+  font-size: 12px;
 }
 .footer-warp .pass a {
   color: #ffffff;
@@ -405,7 +411,7 @@ span:nth-of-type(2) {
 #list-warp .list-box .list-content .list-show .l-box .box-1 span {
   position: absolute;
   top: 20px;
-  left: -30px;
+  left: -20px;
   font-size: 16px;
   color: red;
 }

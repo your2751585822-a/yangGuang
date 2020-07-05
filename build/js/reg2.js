@@ -40,7 +40,7 @@ captcha.draw(document.querySelector('#captcha'), r => {
             msg:"输入密码不规范"
         },
         "userp":{
-            reg:`$("#userpass").val()==val`,
+            reg:`$.trim($("#userpass").val()) === val`,
             msg:"密码不一致！"
         },
         "imgCode":{
@@ -51,7 +51,7 @@ captcha.draw(document.querySelector('#captcha'), r => {
     // console.log($("table input"))
     $("table input").blur(function(){
          let option_id = this.id
-        // console.log(option_id)
+        console.log(option_id)
         let val = $.trim($(this).val())
          if(eval(option[option_id].reg)){
             $(this).next().text("").removeClass("ret")
@@ -89,6 +89,10 @@ captcha.draw(document.querySelector('#captcha'), r => {
         }).done(data=>{
             if(data.status=="success"){
                 alert("注册成功")
+                location.href="../client/login.html"
+                // console.log("jdokfsjfdjs")
+            }else{
+                alert("用戶名已被占用")
             }
         })
     })

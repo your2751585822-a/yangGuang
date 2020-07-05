@@ -1,6 +1,7 @@
-#logo-warp,#header-warp,#store-warp{
+#logo-warp,#header-warp,#store-warp,#cent-warp,#list-warp{
     margin: 0 auto;
     width: 1210px;
+    // color: red;
 }
 #logo{
     width: 100%;
@@ -8,7 +9,7 @@
 }
 #logo-warp{
     height: 109px;
-    background-color: #ccc;
+    // background-color: #ccc;
     .logo-l{
         width: 300px;
         height: 79px;
@@ -38,6 +39,12 @@
             width: 100%;
             height: 40px;
             border: 2px solid red;
+            .iconfont{
+                // color: red;
+                text-align: center;
+                line-height: 40px;
+                font-size: 16px;
+            }
             .btn1{
                 width: 40px;
                 height: 40px;
@@ -115,36 +122,47 @@
 }
 #header-warp{
     height: 42px;
-    background-color: #ccc;
-    border-top: 1px solid red;
+    // background-color: #ccc;
+    // border-top: 1px solid red;
     position: relative;
     .nav-box{
         width: 100%;
         height: 100%;
         line-height: 42px   ;
-        li{
-            float: left;
-
-            a{
-                display: inline-block;
-                padding: 0px 20px;
-                background-color: red;
-                color: #ccc;
+        
+            .a-width{
+                
+                li{
+                    // padding-right: 30px;
+                    display: inline-block;
+                    padding: 0px 20px;
+                    // background-color: red;
+                    color: #ccc;
+                }
+                .moren{
+                    color: red;
+                }
             }
-            i{
-                display: inline-block;
-                background-color: red;
-                padding:0 10px;
-                color: #ccc;
-            }
-        }
+            // a{
+            //     display: inline-block;
+            //     padding: 0px 20px;
+            //     background-color: red;
+            //     color: #ccc;
+            // }
+            // i{
+            //     display: inline-block;
+            //     background-color: red;
+            //     padding:0 10px;
+            //     color: #ccc;
+            // }
+      
     }
 }
 // #header-warp .nav-box li:nth-of-type(1){
 //     background-color: red;
 // }
 .oDiv{
-    width: 1500px;
+    width: 1210px;
     height: 470px;
     position: relative;
     margin: 0 auto;
@@ -188,7 +206,7 @@
   }
   span:nth-of-type(1){
     float: left;
-    margin-left: 20%;
+    margin-left: 13%;
   }
   span:nth-of-type(2){
     float: right;
@@ -301,18 +319,64 @@
           }
       }
   }
+  #cold-warp{
+      width: 1210px;
+  }
   #store-warp{
-      height: 1200px;
-      border: 1px solid red;
+      min-height: 1330px;
+    //   border: 1px solid red;
+      background-color: rgb(229, 226, 226);
       .store-box{
           width: 100%;
           height: 100%;
           .a-box{
               display: block;
-              width: 230px;
+              width: 220px;
               height: 310px;
-              border: 1px solid black;
+              background-color: #fff;
+            //   border: 1px solid black;
               float: left;
+              padding: 5px 5px;
+            //   margin: 8px 20px ;
+                margin:5px 5px;
+                position: relative;
+                .btnB{
+                    // display: block;
+                    width: 70px;
+                    height: 20px;
+                    border: 1px solid red;
+                    font-size: 12px;
+                    line-height: 20px;
+                    text-align: center;
+                    
+                    display: inline-block;
+                    position: absolute;
+                    right: 30px;
+                    bottom: 15px;
+                }
+              img{
+                  display: block;
+                  width: 220px;
+                  height: 250px;
+                  border: 0;
+              }
+              .desc{
+                  padding: 10px 0;
+                  font-size: 12px;
+                  color: black;
+                  line-height: 12px;
+                  width: 150px;
+                  max-height: 2px;
+                  overflow: hidden;
+                  padding-left: 5px;
+              }
+              .price{
+                  font-size: 12px;
+                  line-height: 12px;
+                  color: red;
+                  margin-top: 10px;
+                  padding-left: 5px;
+              }
           }
       }
   }
@@ -330,9 +394,125 @@
         // background-color: orange;
         text-align: center;
         padding-top: 20px;
+        font-size: 12px;
         a{
             color: #ffffff;
             padding: 0 5px;
+           
         }
     }
+}
+#cent-warp{
+    // width: 50px;
+    height: 50px;
+    background-color: rgb(229, 226, 226);
+    text-align: center;
+    line-height: 50px;
+    font-size: 26px;
+    color: red;
+}
+
+#list-warp{
+    // width: 100%;
+    height: 480px;
+    
+    .list-box{
+        width: 100%;
+        height: 100%;
+        background-color: pink;
+
+       
+        .list-content{
+            width: 400px;
+            height: 480px;
+            background-color: #ccc;
+            float: left;
+            // margin-left: 5px;
+            .list-header{
+                width: 100%;
+                height: 70px;
+                background-color: red;;
+                .list-title{
+                    font-size: 20px;
+                    color: #ffffff;
+                    line-height: 70px;
+                    padding-left: 20px;
+                    
+                }
+            }
+            .list-show{
+                width: 100%;
+                height: 420px;
+
+                .show-l{
+                    width: 200px;
+                    height: 260px;
+                    // border: 1px solid blue;
+                    float: left;
+                    padding: 10px 5px 6px 5px;
+                    box-sizing: border-box;
+                    margin-left: 5px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        
+                    }
+                }
+                .l-box{
+                    width: 190px;
+                    height: 260px;
+                    // border: 1px solid red;
+                    float: right;
+                    padding-right: 5px;
+                    box-sizing: border-box;
+                    .box-1{
+                        width: 100%;
+                        height: 45%;
+                        // border-bottom:1px solid red ;
+                        background-color: #fff;
+                        position: relative;
+                        margin-top:10px ;
+                        
+                        img{
+                            position: absolute;
+                            right: 10px;
+                            top: 10%;
+                        }
+                        span{
+                            position: absolute;
+                            top: 20px;
+                            left: -20px;
+                            font-size: 16px;
+                            color: red;
+                        }
+                        h6{
+                            position: absolute;
+                            top: 50px;
+                            left: 10px;
+                            font-size: 12px;
+                            color: black;
+                        }
+                    }
+                   
+                }
+                .header-img{
+                    width: 400px;
+                    height: 130px;
+                    // border: 1px solid black;
+                    float: left;
+                    margin-top:10px ;
+                    
+                    img{
+                        width: 47%;
+                        height: 100%;
+                        float: left;
+                        padding-left:5px ;
+                        // box-sizing: border-box;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    
 }

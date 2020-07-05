@@ -9,7 +9,7 @@ $sql = "SELECT * FROM `user` WHERE username = '$username'";
 $r = mysqli_query($db,$sql);
 $num = mysqli_num_rows($r);
 if($num==1){
-    echo"用户名已被占用！";
+    echo'{"status":"用户名已被占用！"}';
 }elseif($num==0){
     $sql = "INSERT INTO user " .
     "(id,username,userpass,userphone)" .

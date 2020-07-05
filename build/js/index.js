@@ -23,14 +23,15 @@ $(function(){
  
         $.ajax({
             url:"../server/goods01.php",
+            data:"res_id=dt",
             dataType:"json"
         }).done(data=>{
-            // console.log(data)
+            console.log(data)
             // console.log($(".store-box"))
             let html1=""
              data.map(item=>{
                 return html1+=`
-                <li class="a-box">
+                <li class="a-box" data-xx = ${item.good_id}>
                     <img src=${item.good_src} alt="">
                     <p class="desc"><a href="">${item.good_desc}</a></p>
                     <h2 class="price">￥${item.good_price}</h2>
@@ -47,6 +48,24 @@ $(function(){
                 $(this).css({"border":"1px solid red"}).siblings().css({"border":"1px solid #ffffff"})
             // })
         })
+        $(".store-box").on("click",".a-box",function(){
+            // console.log(this)
+            let good_id =  $(this).attr("data-xx")
+            // console.log(good_id)
+            $.ajax({
+                url:"../server/02.php",
+                type:"get",
+                data:`good_id=${good_id}`,
+                dataType:"json"
+            }).done(data=>{
+                console.log(data)
+                if(data.status=="success"){
+                    // console.log('jdfojds')
+                    location.href = `./dail.html?type=${good_id}`
+                }
+            })
+        })  
+
         $.ajax({
             url:"../server/get2.json",
             dataType:"json"
@@ -99,7 +118,29 @@ $(function(){
         })
         })
 
-    
+        $(".nav-box>li>a").eq(0).css({"backgroundColor":"red","color":"white"}).siblings().css({"backgroundColor":"white","color":"black"})
+        $(".zs").css({display:"none"})
+        let rets = localStorage.getItem("userId")||""
+        console.log(rets)
+        if(rets!=""){
+            $(".reg1").css({"display":"none"})
+            $(".zs").css({"display":"block"})
+            $(".zs>.yh").html("用戶："+rets)
+            
+        }else if(rets==""){
+            $(".reg1").css({"display":"block"})
+            $(".zs").css({"display":"none"})
+            
+        }
+        $(".r-box>i").eq(0).click(function(){
+            location.href="../client/cart.html"
+            // console.log("djfj")
+        })
+        // $(".nav-box").on("click",".a-width",function(){
+        //     // console.log("3747289")
+        //     $(".nav-box1").slideToggle()
+        // })
+        // $(".nav-box>li>a").eq(0)
 })  
 // let arrsj = document.getElementsByClassName("bz-more-list")[0].querySelectorAll(".bz-more-info-price-txt")
 // let arrt1 = document.getElementsByClassName("bz-more-list")[0].children

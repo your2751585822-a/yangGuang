@@ -1,0 +1,209 @@
+#logo-warp,
+#list-warp,
+.list-box,
+.list-footer {
+  margin: 0 auto;
+  width: 1210px;
+}
+#logo {
+  width: 100%;
+}
+#logo-warp {
+  height: 109px;
+}
+#logo-warp .logo-l {
+  width: 200px;
+  height: 79px;
+  float: left;
+  padding: 10px 0 0 10px;
+}
+#logo-warp .logo-l .img-a {
+  display: block;
+  width: 240px;
+  height: 68px;
+}
+#logo-warp .logo-l .img-a img {
+  width: 100%;
+  height: 100%;
+}
+#logo-warp .logo-dl {
+  float: left;
+  padding: 38px 0 0 0;
+}
+#logo-warp .logo-dl .dl {
+  float: left;
+  font-size: 14px;
+  color: black;
+}
+#logo-warp .logo-dl .dr {
+  float: left;
+  display: none;
+  font-size: 14px;
+  color: black;
+}
+#logo-warp .logo-c {
+  width: 150px;
+  height: 70px;
+  float: left;
+  color: black;
+  font-size: 20px;
+  padding-top: 35px;
+}
+#logo-warp .logo-r {
+  width: 400px;
+  height: 79px;
+  float: right;
+  padding-top: 30px;
+}
+#logo-warp .logo-r .word-box {
+  height: 40px;
+  width: 350px;
+  border-bottom: 1px solid red;
+}
+#logo-warp .logo-r .word-box .logo-word {
+  width: 100px;
+  height: 40px;
+  color: #ccc;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 10px;
+  position: relative;
+}
+#logo-warp .logo-r .word-box .logo-word i {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  bottom: -5px;
+  left: 50%;
+}
+.list-box {
+  height: 50px;
+  background-color: #ccc;
+}
+.list-box li {
+  float: left;
+  width: 200px;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+#list-warp {
+  height: 500px;
+  position: relative;
+}
+#list-warp .list-content1 {
+  min-height: 1300px;
+}
+#list-warp .list-content1 .list-content {
+  width: 100%;
+  padding-top: 40px;
+}
+#list-warp .list-content1 .list-content .list-title {
+  padding: 20px 0 20px 75px;
+  border-bottom: 3px solid #ccc;
+  font-size: 14px;
+  color: red;
+}
+#list-warp .list-content1 .list-content .list-box1 {
+  height: 60px;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+#list-warp .list-content1 .list-content .list-box1 li {
+  float: left;
+  width: 200px;
+  height: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+#list-warp .list-content1 .list-content .list-box1 .cla1 img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: -30px;
+}
+#list-warp .list-content1 .list-content .list-box1 .cla2 {
+  font-size: 14px;
+  color: black;
+}
+#list-warp .list-content1 .list-content .list-box1 .cla4 input {
+  width: 18px;
+  height: 18px;
+}
+#list-warp .list-content1 .list-content .list-box1 .cla5 {
+  font-size: 18px;
+  color: red;
+}
+.list-footer {
+  width: 1210px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #ccc;
+  position: fixed;
+  bottom: 200px;
+  margin-left: 30px;
+  overflow: hidden;
+}
+.list-footer .oPrice-Count {
+  width: 150px;
+  height: 100%;
+  background-color: red;
+  float: right;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+}
+.list-footer .oPrice {
+  width: 300px;
+  height: 100%;
+  float: right;
+  text-align: center;
+  line-height: 60px;
+  color: red;
+}
+.list-footer .oPrice span {
+  color: red;
+  font-size: 20px;
+}
+.list-footer .oPrice b {
+  color: black;
+}
+.list-footer .oCount {
+  width: 300px;
+  height: 100%;
+  float: right;
+  text-align: center;
+  line-height: 60px;
+  color: black;
+}
+.list-footer .oCount i {
+  font-size: 20px;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #343a3a;
+}
+.footer-warp {
+  width: 1210px;
+  height: 200px;
+  margin: 0 auto;
+  /* background-color: orange; */
+}
+.footer-warp .pass {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+}
+.footer-warp .pass a {
+  color: #ffffff;
+  padding: 0 5px;
+}
